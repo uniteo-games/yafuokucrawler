@@ -1,5 +1,6 @@
 {
   "title": "Yahoo Auctions Closed Search Scraper",
+  "description": "Scrapes closed auction items and outputs fields including sellerStatus (seller listing/status text).",
   "type": "object",
   "schemaVersion": 1,
   "properties": {

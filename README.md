@@ -13,7 +13,7 @@ Apify Actor (Node.js + Crawlee + CheerioCrawler) to scrape closed auction data f
 - `endTime`
 - `itemUrl`
 - `imageUrl`
-- `sellerId`
+- `sellerStatus`
 
 ## Run
 ```bash

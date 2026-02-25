@@ -66,7 +66,7 @@ const extractFromElement = ($, element, loadedUrl) => {
         $item.find('time, [class*="time" i], [class*="date" i], [class*="end" i]').first().text(),
     ) || null;
 
-    const sellerId = normalizeText(
+    const sellerStatus = normalizeText(
         $item.find('[class*="seller" i] a, a[href*="/user/"]').first().text(),
     ) || null;
 
@@ -77,7 +77,7 @@ const extractFromElement = ($, element, loadedUrl) => {
         endTime,
         itemUrl,
         imageUrl,
-        sellerId,
+        sellerStatus,
     };
 };
 
@@ -109,7 +109,7 @@ const extractFromJsonLd = ($, loadedUrl) => {
                         endTime: normalizeText(item?.endDate) || null,
                         itemUrl: url,
                         imageUrl: toAbsoluteUrl(Array.isArray(item?.image) ? item.image[0] : item?.image, loadedUrl),
-                        sellerId: normalizeText(item?.seller?.name) || null,
+                        sellerStatus: normalizeText(item?.seller?.name) || null,
                     });
                 }
             }
