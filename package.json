@@ -1,0 +1,14 @@
+{
+  "name": "yafuoku-closedsearch-actor",
+  "version": "1.0.0",
+  "description": "Apify Actor for scraping closed auction items from Yahoo! Auctions Japan",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.1.10",
+    "crawlee": "^3.11.1"
+  }
+}
