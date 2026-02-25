@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "yafuoku-closedsearch-crawler",
+  "title": "Yahoo Auctions Closed Search Scraper",
+  "description": "Scrapes sold items from Yahoo Auctions closed search pages.",
+  "version": "0.1",
+  "meta": {
+    "templateId": "js-crawlee-cheerio"
+  },
+  "input": "./INPUT_SCHEMA.json",
+  "dockerfile": "./Dockerfile"
+}

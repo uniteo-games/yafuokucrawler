@@ -1,0 +1,22 @@
+{
+  "title": "Yahoo Auctions Closed Search Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keyword": {
+      "title": "Keyword",
+      "type": "string",
+      "description": "Search keyword for closed auction items.",
+      "editor": "textfield"
+    },
+    "maxItems": {
+      "title": "Max items",
+      "type": "integer",
+      "description": "Maximum number of items to scrape.",
+      "default": 100,
+      "minimum": 1,
+      "editor": "number"
+    }
+  },
+  "required": ["keyword"]
+}
